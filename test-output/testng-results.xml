@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-04T00:54:23 IST" name="Default suite" finished-at="2025-09-04T00:55:26 IST" duration-ms="62474">
+    <groups>
+    </groups>
+    <test started-at="2025-09-04T00:54:23 IST" name="Default test" finished-at="2025-09-04T00:55:26 IST" duration-ms="62474">
+      <class name="com.aastha.browserwithextension.com.aastha.browserwithextension.MetaMaskLaunchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.aastha.browserwithextension.com.aastha.browserwithextension.MetaMaskLaunchTest@28f2a10f]" started-at="2025-09-04T00:54:23 IST" name="setUp" finished-at="2025-09-04T00:55:26 IST" duration-ms="62408" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: 'Aloks-MacBook-Air.local', ip: '2401:4900:8811:ab52:44b9:5414:f21:de87%en0'
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--user-data-dir=/Users/alok..., --profile-directory=Profile 4], binary: /Applications/Google Chrome..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: 'Aloks-MacBook-Air.local', ip: '2401:4900:8811:ab52:44b9:5414:f21:de87%en0'
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--user-data-dir=/Users/alok..., --profile-directory=Profile 4], binary: /Applications/Google Chrome..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at com.aastha.browserwithextension.com.aastha.browserwithextension.MetaMaskLaunchTest.setUp(MetaMaskLaunchTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="launchWithMetaMask()[pri:0, instance:com.aastha.browserwithextension.com.aastha.browserwithextension.MetaMaskLaunchTest@28f2a10f]" started-at="2025-09-04T00:55:26 IST" name="launchWithMetaMask" finished-at="2025-09-04T00:55:26 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: 'Aloks-MacBook-Air.local', ip: '2401:4900:8811:ab52:44b9:5414:f21:de87%en0'
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--user-data-dir=/Users/alok..., --profile-directory=Profile 4], binary: /Applications/Google Chrome..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: 'Aloks-MacBook-Air.local', ip: '2401:4900:8811:ab52:44b9:5414:f21:de87%en0'
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--user-data-dir=/Users/alok..., --profile-directory=Profile 4], binary: /Applications/Google Chrome..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at com.aastha.browserwithextension.com.aastha.browserwithextension.MetaMaskLaunchTest.setUp(MetaMaskLaunchTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWithMetaMask -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.aastha.browserwithextension.com.aastha.browserwithextension.MetaMaskLaunchTest@28f2a10f]" started-at="2025-09-04T00:55:26 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1756927526176" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aastha.browserwithextension.com.aastha.browserwithextension.MetaMaskLaunchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
